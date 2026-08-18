@@ -4,48 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header style="text-align: center;">
-        <h1>Fikir Tekalign</h1>
-        <img src="./images/portfolio.jpg" alt="photo of Fikir" width="200" height="200"><br><br><br>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#contact">Contact</a>
 
-        </nav>
-    </header><br><br>
+    <header class="hero">
+        <div class="intro-section">
+            <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+
+
+            <div class="navbar">
+                <h1><a href="#about" class="name">Fikir Tekalign</a></h1>
+
+                <nav>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+            </div>
+
+            <section id="about">
+
+                <div class="intro-image">
+                    <div class="intro">
+                        <h2>About Me</h2>
+
+                <p>
+                    I am a third year Information Systems student at AAU. I enjoy learning about technology,
+                    programming and web development. I am continuously improving my skills and I enjoy
+                    building projects that help me learn and grow.
+                </p>
+                <div class="hero-button">
+                    <button class="btn btn-primary">Download CV</button>
+                <button  class="btn btn-secondary">View Projects</button>
+                </div>
+                    </div>
+                 <img src="./images/portfolio.jpg" alt="Photo of Fikir">
+               
+                
+            </div>
+                
+            </section>
+
+        </div>
+    </header>
+
     <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>I am a third year Information Systems student at AAU. I enjoy learning about technology, programming and web development. I am continuously improving my skills and I enjoy building projects that help me learn and grow. </p><br>
-
-            <h3>Hobbies</h3>
-            <ul>
-                <li>Reading📚</li>
-                <li>Coding👩‍💻</li>
-                <li>Movies🎥</li>
-            </ul><br><hr><br>
-
-  
-
-        </section>
 
         <section id="skills">
-    <h2>🧰 My Toolbox</h2>
 
-   
-        <p>💻 Programming</p><br>
-        <table border="1">
+            <h3 class="h3-hobby">Hobbies</h3>
+
+                <ul class="hobby">
+                    <li>Reading 📚</li>
+                    <li>Coding 👩‍💻</li>
+                    <li>Movies 🎥</li>
+                    <li>Designing 🎨</li>
+                </ul>
+
+        <div class="tool">
+            <h2>Skills</h2>
+
+
+            <table class="table">
+
+    <thead>
         <tr>
             <th>Technology</th>
             <th>Level</th>
             <th>Status</th>
         </tr>
+    </thead>
 
+    <tbody>
         <tr>
-            <td>HTML</td>
+            <td>HTML/CSS</td>
             <td>★★★★☆</td>
             <td>Comfortable</td>
         </tr>
@@ -73,64 +108,117 @@
             <td>★★★★☆</td>
             <td>Practicing</td>
         </tr>
-    </table><br><br><br><hr><br>
-   
+    </tbody>
 
-    <details>
-        <summary>🛠️ Tools</summary>
+</table>
+        </div>
+            
+
+            <div class="extra-info">
+
+    <div class="tools">
+        <h3>Tools</h3>
+
         <ul>
             <li>VS Code</li>
             <li>Git</li>
             <li>GitHub</li>
+            <li>vercel</li>
+            <li>Vite</li>
+            <li>Figma</li>
         </ul>
-    </details>
+    </div>
 
-    <details>
-        <summary>🌱 Currently Exploring</summary>
+    <div class="exploring">
+        <h3>Currently Exploring</h3>
+
         <ul>
             <li>React</li>
             <li>Next.js</li>
             <li>Mobile Development</li>
+            <li>Artificial Intelligence</li>
+            <li>Bootstrap</li>
         </ul>
-    </details>
+    </div>
 
-       
-   
-</section> <br><br><br>
+</div>
 
-<section id="contact">
-    <h2>Contact Me</h2>
-    
-    <form>
 
-        <label for="name"><strong>Name</strong></label><br><br>
-        <input type="text" id="name" name="name" placeholder="Enter Your Name"><br><br>
-        <label for="email"><strong>Email</strong></label><br><br>
-        <input type="email" id="email" name="email" placeholder="Enter Your Email"><br><br>
-        <label for="reason"><strong>Reason</strong></label><br><br>
+        </section>
 
-        <select id="reason" name="reason">
-            <option>Question</option>
-            <option>Feedback</option>
-            <option>Hire Me</option>
-        </select><br><br>
+        <section id="contact">
 
-        <label for="message"><strong>Message</strong></label><br><br>
+            <div class="contact-intro">
 
-        <textarea id="message" name="message" rows="5" cols="30" placeholder="Write Your Message Here"></textarea><br><br>
+                <h2>Contact Me</h2>
+    <p>
+        Have a question, want to work together, or just want to say hello?
+        Send me a message.
+    </p>
+            </div>
 
-        <button type="submit">Send</button>
+    <form class="contact-form">
+
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name">
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email">
+        </div>
+
+        <div class="form-group">
+            <label for="reason">Reason</label>
+            <select id="reason" name="reason">
+                <option>Question</option>
+                <option>Feedback</option>
+                <option>Hire Me</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Write your message here..."
+            ></textarea>
+        </div>
+
+        <button type="submit" class="contact-button">
+            Send Message
+        </button>
+
     </form>
 
 </section>
 
+    </main>
 
-    </main><br><br><hr><br>
+    <footer class="footer">
 
-    <footer style="text-align: center;">
-        <strong><p>&copy; 2026 Fikir Tekalign</p></strong>
-        <strong><p>Thank you for visiting my portfolio.</p></strong>
-    </footer>
+    <div class="footer-content">
+
+        <div class="footer-brand">
+            <h2>Fikir Tekalign</h2>
+            <p>
+                Building, learning, and creating one project at a time.
+            </p>
+        </div>
+
+       
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2026 Fikir Tekalign. All rights reserved.</p>
+        <p>Thank you for visiting my portfolio!</p>
+    </div>
+
+</footer>
 
 </body>
 </html>
