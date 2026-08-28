@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 5</title>
+    <style>
+        ul {
+            padding: 0;
+            list-style: none;
+            width: 250px;
+        }
+
+        li {
+            cursor: pointer;
+            padding: 10px;
+            margin-bottom: 8px;
+            border-bottom: 1px solid #ddd;
+            color: hsl(285, 89%, 15%);
+            font-family: Arial, Helvetica, sans-serif;
+            transition: background-color 0.2s;
+        }
+
+        li:hover {
+            background-color: #f0e6f5;
+        }
+
+        p, h1 {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        </style>
+</head>
+<body>
+    <h1>Fruit List</h1>
+
+    <ul>
+        <li onclick="getNextItem(this)">Apple</li>
+        <li onclick="getNextItem(this)">Banana</li>
+        <li onclick="getNextItem(this)">Orange</li>
+        <li onclick="getNextItem(this)">Mango</li>
+    </ul>
+
+    <p id="result">Click an item to see the next one!</p>
+    
+
+    <script>
+        function getNextItem(item) {
+            let nextItem = item.nextElementSibling;
+
+            if(nextItem) {
+                console.log(nextItem.textContent);
+                document.getElementById("result").textContent = "Next item: " + nextItem.textContent;
+            } else {
+                console.log("No more items");
+                document.getElementById("result").textContent = "No more items";
+            }
+            }
+    </script>
+</body>
+</html>

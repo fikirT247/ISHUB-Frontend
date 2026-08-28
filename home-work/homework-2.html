@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 2</title>
+    <style>
+        p {
+            cursor: pointer;
+            color: hsl(285, 89%, 15%);
+            font-family:Arial, Helvetica, sans-serif;
+            padding: 10px;
+            margin-bottom: 8px;
+            border-bottom: 1px solid #ddd;
+            transition: background-color 0.2s;
+        }
+        img {
+            width: 300px;
+            height: 300px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <img id="mainImage" src="image1.jpg">
+    <p onclick="changeImage('image1.jpg')">Lavender</p>
+    <p onclick="changeImage('image2.jpg')">Lavender White Background</p>
+    <p onclick="changeImage('image3.jpg')">Lavender Purple Grass Field</p>
+
+    <script>
+        function changeImage(filename) {
+            document.getElementById("mainImage").src = filename;
+        }
+    </script>
+</body>
+</html>
